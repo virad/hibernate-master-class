@@ -409,11 +409,6 @@ public abstract class AbstractTest {
         }
     }
 
-    private final ExecutorService executorService = Executors.newSingleThreadExecutor(r -> {
-        Thread bob = new Thread(r);
-        bob.setName("Bob");
-        return bob;
-    });
 
     protected final Logger LOGGER = LoggerFactory.getLogger(getClass());
 
